@@ -1,0 +1,53 @@
+Config:
+  delay: 60
+  notifyNotAvailable: false
+  availableOn: "On"
+  availableOff: "Off"
+
+Menus:
+  ticketsMenu:
+    name: "&aTickets"
+    items:
+      ticketItem:
+        name: "&aTicket from &b{player}"
+        lore:
+          - ""
+          - "&8Click to show more"
+          - ""
+          - "&eDate: &f{date}"
+          - "&eHour: &f{hour}"
+          - ""
+          - "&eID: &f{id}"
+          - ""
+          - "&fMessage: &7{message}"
+          - ""
+      nextPage:
+        name: "&a---->"
+        lore:
+          - ""
+          - "&fGo to the next page"
+          - ""
+        id: 1
+        data: 0
+        slot: 48
+      previosPage:
+        name: "&c<----"
+        lore:
+          - ""
+          - "&cGo to the previous page"
+          - ""
+        id: 1
+        data: 0
+        slot: 50
+
+Messages:
+  onlyInGame: "&cUse this only in-game"
+  notHasPermission: "&cYou don't have permission to use this"
+  usageCreate: "&cUse /ticket create (Message)"
+  helpTicket: "&a&lTicket commands @n&f/ticket create &7- &fCreate a ticket@n&f/tickets &7- Show the all tickets@n"
+  ticketCreated: "&aYour ticket has been created! @n&e&lInfo@n&fMessage: &7{message}@n&fID: &7{id}@n"
+  ticketWarn: "@n&aAn new ticket has sent!@n&fPlayer: &7{player}@n&fID: &7{id}@n@n&fMessage: &7{message}@n"
+  availableChange: "&aYou changed your available to &f{state}"
+  sayAnswer: "@n&aSay the answer from this ticket in chat@n"
+  ticketAnswerStaff: "@n&aYou answered the ticket with id: &7{id} @n&fPlayer: &7{player}@n&fAnswer&7{answer}@n"
+  ticketAnswerPlayer: "@n&aYour ticket with id &7{id} &fhas answered!@n&fStaff: &7{staff}@n&fAnswer: &7{answer}@n"
